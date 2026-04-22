@@ -1,8 +1,12 @@
 public class MirrorEndsText {
     public static String mirrorEnds(String enteredText) {
         String mirrorPart = "";
-        for (int index = 0; index < enteredText.length(); index++) {
-
+        for (int num = 0; num < enteredText.length(); num++) {
+            if (enteredText.charAt(num) == enteredText.charAt(enteredText.length() - 1 - num)) {
+                mirrorPart += enteredText.charAt(num);
+            } else {
+                break;
+            }
         }
         return mirrorPart;
     }
