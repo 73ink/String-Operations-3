@@ -7,6 +7,12 @@ public class EqualIsNot {
                 isCount++;
             }
         }
+        for (int num = 0; num < enteredText.length() - 2; num++) {
+            if (enteredText.substring(num, num + 3).equals("not")) {
+                notCount++;
+            }
+        }
+
         return isCount == notCount;
     }
     public static void main(String[] args){
