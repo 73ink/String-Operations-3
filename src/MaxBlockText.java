@@ -5,6 +5,17 @@ public class MaxBlockText {
         }
         int largestBlock = 1;
         int currentBlock = 1;
+        for (int num = 1; num < enteredText.length(); num++) {
+            if (enteredText.charAt(num) == enteredText.charAt(num - 1)) {
+                currentBlock++;
+            } else {
+                currentBlock = 1;
+            }
+
+            if (currentBlock > largestBlock) {
+                largestBlock = currentBlock;
+            }
+        }
         return largestBlock;
     }
     public static void main (String[] args){
