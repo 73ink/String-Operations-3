@@ -13,6 +13,8 @@ public class CountTriples {
         return tripleCount;
     }
     public static void main(String[] args){
-
+        System.out.println(countTriple("abcXXXabc"));
+        System.out.println(countTriple("xxxabyyyycd"));
+        System.out.println(countTriple("a"));
     }
 }
