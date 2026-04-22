@@ -19,6 +19,8 @@ public class NotReplaceText {
         return updatedText;
     }
     public static void main(String[] args){
-
+        System.out.println(notReplace("is test"));
+        System.out.println(notReplace("is-is"));
+        System.out.println(notReplace("This is right"));
     }
 }
