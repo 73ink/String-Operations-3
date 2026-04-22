@@ -16,6 +16,8 @@ public class CountYZWords {
         return endingCount;
     }
     public static void main (String[] args){
-
+        System.out.println(countYZ("fez day"));
+        System.out.println(countYZ("day fez"));
+        System.out.println(countYZ("da fyyyz")); // i have deleted the 'y' in day to make sure the method is working
     }
 }
