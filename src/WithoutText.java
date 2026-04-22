@@ -19,6 +19,8 @@ public class WithoutText {
         return resultText;
     }
     public static void main (String[] args){
-
+        System.out.println(withoutString("Hello there", "llo"));
+        System.out.println(withoutString("Hello there", "e"));
+        System.out.println(withoutString("Hello there", "x"));
     }
 }
