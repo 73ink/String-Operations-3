@@ -4,7 +4,20 @@ public class SumNumbersText {
         String currentNumber = "";
 
         for (int num = 0; num < enteredText.length(); num++) {
+            char currentCharacter = enteredText.charAt(num);
 
+            if (Character.isDigit(currentCharacter)) {
+                currentNumber += currentCharacter;
+            } else {
+                if (!currentNumber.equals("")) {
+                    totalNumbers += Integer.parseInt(currentNumber);
+                    currentNumber = "";
+                }
+            }
+        }
+
+        if (!currentNumber.equals("")) {
+            totalNumbers += Integer.parseInt(currentNumber);
         }
         return totalNumbers;
     }
