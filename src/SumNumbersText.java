@@ -23,6 +23,8 @@ public class SumNumbersText {
     }
 
     public static void main(String[] args){
-
+        System.out.println(sumNumbers("abc123xyz"));
+        System.out.println(sumNumbers("aa11b33"));
+        System.out.println(sumNumbers("7 11"));
     }
 }
