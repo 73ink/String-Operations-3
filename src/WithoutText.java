@@ -6,6 +6,13 @@ public class WithoutText {
         int num = 0;
 
         while (num < baseText.length()) {
+            if (num <= baseText.length() - removeText.length()
+                    && lowerBaseText.substring(num, num + removeText.length()).equals(lowerRemoveText)) {
+                num += removeText.length();
+            } else {
+                resultText += baseText.charAt(num);
+                num++;
+            }
 
         }
 
