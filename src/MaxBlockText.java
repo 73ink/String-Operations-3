@@ -11,7 +11,6 @@ public class MaxBlockText {
             } else {
                 currentBlock = 1;
             }
-
             if (currentBlock > largestBlock) {
                 largestBlock = currentBlock;
             }
@@ -19,6 +18,8 @@ public class MaxBlockText {
         return largestBlock;
     }
     public static void main (String[] args){
-
+        System.out.println(maxBlock("hoopla"));
+        System.out.println(maxBlock("abbCCCddBBBxx"));
+        System.out.println(maxBlock(""));
     }
 }
