@@ -11,6 +11,8 @@ public class MirrorEndsText {
         return mirrorPart;
     }
     public static void main (String [] args){
-
+        System.out.println(mirrorEnds("abXYZba"));
+        System.out.println(mirrorEnds("abca"));
+        System.out.println(mirrorEnds("aba"));
     }
 }
