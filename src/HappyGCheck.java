@@ -13,6 +13,8 @@ public class HappyGCheck {
         return true;
     }
     public static void main(String[] args) {
-
+        System.out.println(gHappy("xxggxx"));
+        System.out.println(gHappy("xxgxx"));
+        System.out.println(gHappy("xxggyygxx"));
     }
 }
